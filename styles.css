@@ -153,7 +153,9 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 .footer-brand span { border-left: 1px solid var(--line); padding-left: 16px; }
 .footer-brand strong { display: block; font-size: 16px; }
 .footer-brand small { display: block; font-size: 14px; color: var(--muted); }
-.footer-inner > p { font-size: 12px; color: var(--muted); }
+.footer-meta { font-size: 12px; color: var(--muted); }
+.footer-meta p + p { margin-top: 4px; }
+.developer-credit strong { font-weight: 600; }
 .footer .text-link { font-size: 13px; }
 dialog { width: min(760px, calc(100vw - 36px)); max-height: calc(100dvh - 40px); border: 0; padding: 30px; border-radius: 8px; color: var(--ink); overflow: auto; box-shadow: 0 24px 100px #0005; }
 dialog::backdrop { background: #17181bd9; }
@@ -254,7 +256,7 @@ body:has(dialog[open]) { overflow: hidden; }
   .transparency h2 br { display: none; }
   .news-article { grid-template-columns: minmax(0,1fr) 140px; gap: 30px; }
   .footer-inner { flex-wrap: wrap; }
-  .footer-inner > p { order: 3; width: 100%; }
+  .footer-meta { order: 3; width: 100%; }
 }
 @media (max-width: 600px) {
   body { font-size: 16px; }
